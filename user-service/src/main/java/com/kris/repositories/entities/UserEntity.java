@@ -1,9 +1,13 @@
 package com.kris.repositories.entities;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -22,6 +26,9 @@ public class UserEntity {
 	private String email;
 	
 	private String password;
+	
+	@OneToMany(fetch=FetchType.EAGER, mappedBy="user")
+	private List<CardEntity> cards;
 
 	public Long getId() {
 		return id;
@@ -62,5 +69,15 @@ public class UserEntity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public List<CardEntity> getCards() {
+		return cards;
+	}
+
+	public void setCards(List<CardEntity> cards) {
+		this.cards = cards;
+	}
+	
+	
 	
 }

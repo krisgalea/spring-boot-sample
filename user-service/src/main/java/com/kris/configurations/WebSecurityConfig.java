@@ -16,7 +16,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.kris.repositories.SqlRepositoryService;
+import com.kris.repositories.UserRepositoryService;
 import com.kris.repositories.entities.UserEntity;
 
 /**
@@ -31,11 +31,14 @@ import com.kris.repositories.entities.UserEntity;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
-	private SqlRepositoryService userRepository;
+	private UserRepositoryService userRepository;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().anyRequest().fullyAuthenticated().
+//		http.authorizeRequests().anyRequest().fullyAuthenticated().
+//		and().httpBasic().and().csrf().disable();
+		
+		http.authorizeRequests().anyRequest().permitAll().
 		and().httpBasic().and().csrf().disable();
 	}
 	

@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.kris.repositories.SqlRepositoryService;
+import com.kris.repositories.UserRepositoryService;
 import com.kris.repositories.entities.UserEntity;
 
 @Configuration

@@ -7,7 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.kris.exceptions.UserServiceException;
-import com.kris.repositories.UserDAO;
+import com.kris.repositories.UserDAOImpl;
 import com.kris.services.UserService;
 import com.kris.services.models.UserProfile;
 
@@ -15,7 +15,7 @@ import com.kris.services.models.UserProfile;
 public class UserServiceImpl implements UserService{
 
 	@Autowired
-	private UserDAO userDAO;
+	private UserDAOImpl userDAO;
 	
 	@Autowired
 	public PasswordEncoder encoder;

@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.kris.repositories.entities.UserEntity;
 
-public interface SqlRepositoryService extends CrudRepository<UserEntity, Long>{
+public interface UserRepositoryService extends CrudRepository<UserEntity, Long>{
 
 	public UserEntity findByEmail(String email);
 	
