@@ -7,7 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.kris.exceptions.UserServiceException;
-import com.kris.respositories.UserDAO;
+import com.kris.repositories.UserDAO;
 import com.kris.services.UserService;
 import com.kris.services.models.UserProfile;
 

@@ -1,4 +1,4 @@
-package com.kris.respositories.entities;
+package com.kris.repositories.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

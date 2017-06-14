@@ -1,4 +1,4 @@
-package com.kris.respositories;
+package com.kris.repositories;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.collect.Lists;
-import com.kris.respositories.entities.UserEntity;
+import com.kris.repositories.entities.UserEntity;
 import com.kris.services.models.UserProfile;
 
 /**

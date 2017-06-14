@@ -1,8 +1,8 @@
-package com.kris.respositories;
+package com.kris.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.kris.respositories.entities.UserEntity;
+import com.kris.repositories.entities.UserEntity;
 
 public interface SqlRepositoryService extends CrudRepository<UserEntity, Long>{
 

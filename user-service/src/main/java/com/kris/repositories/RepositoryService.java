@@ -1,4 +1,4 @@
-package com.kris.respositories;
+package com.kris.repositories;
 
 import java.util.List;
 
